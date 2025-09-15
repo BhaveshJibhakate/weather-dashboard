@@ -1,38 +1,117 @@
-.App {
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #333;
+  padding: 15px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  padding: 60px;
   text-align: center;
+  min-height: 60vh;
+  list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.project-card {
+  background: #f5f5f5;
+  padding: 20px;
+  margin: 15px auto;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background: #4CAF50;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* styling for skills icons*/
+.skills-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.skills-logos i {
+  font-size: 60px; /* adjust size */
+  transition: transform 0.3s ease;
+}
+
+.skills-logos i:hover {
+  transform: scale(1.2);
+}
+
+/*styling for contact icons*/
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  font-size: 40px;
+  color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  transform: scale(1.2);
+  color: #0077b5; /* default hover color, you can customize */
 }
